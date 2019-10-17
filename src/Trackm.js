@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NavBar from './navbar/NavBar'
 import ApplicationViews from './ApplicationViews'
+import './Trackm.css'
 
 // component which runs the routing points of the application
 

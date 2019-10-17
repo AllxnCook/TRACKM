@@ -1,40 +1,46 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "joe",
-            "email": "joe@joe.com",
-            "password": "joe",
-            "hourlyRate": "18.47"
-        },
-        {
-            "id": 2,
-            "name": "random",
-            "email": "random@random.com",
-            "password": "random",
-            "hourlyRate": "17.62"
-        }
-    ],
-    "trips": [
-        {
-            "id": 1,
-            "userId": 1,
-            "busId": 1,
-            "preTrip": true,
-            "postTrip": true,
-            "notes": "Checked the bus, everything is working properly, but it needs a windshield wiper",
-            "startTime": "",
-            "endTime": ""
-        }
-    ],
-    "buses": [
-        {
-            "id": 1,
-            "busNumber": "1406"
-        },
-        {
-            "id": 2,
-            "busNumber": "1804"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "username": "joe",
+      "email": "joe@joe.com",
+      "password": "joe",
+      "hourlyRate": "18.47"
+    },
+    {
+      "id": 2,
+      "username": "random",
+      "email": "random@random.com",
+      "password": "random",
+      "hourlyRate": "17.62"
+    },
+    {
+      "username": "greg",
+      "email": "greg@greg",
+      "password": "greg",
+      "id": 3
+    }
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "userId": 1,
+      "busId": 1,
+      "preTrip": true,
+      "postTrip": true,
+      "notes": "Checked the bus, everything is working properly, but it needs a windshield wiper",
+      "startTime": "",
+      "endTime": ""
+    }
+  ],
+  "buses": [
+    {
+      "id": 1,
+      "busNumber": "1406"
+    },
+    {
+      "id": 2,
+      "busNumber": "1804"
+    }
+  ]
 }

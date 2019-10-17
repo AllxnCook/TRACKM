@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import LoginManager from './LoginManager'
-import { Link } from 'react-router-dom'
 
 // component to display login information and validate credentials
 
@@ -22,7 +21,7 @@ class Login extends Component {
         event.preventDefault()
         LoginManager.getOneUser(this.state.username)
         .then(users => {
-            if (this.state.password === users[0].id){
+            if (this.state.password === users[0].password){
                 localStorage.setItem("userId", users[0].id)
                 this.props.history.push("/home");
             } else {
@@ -50,7 +49,6 @@ class Login extends Component {
                         required="" />
                     </div>
                     <button type="submit">Sign In</button>
-                    <Link to={`/register`}><button>Register</button></Link>
                 </fieldset>
             </form>
         )
