@@ -34,9 +34,6 @@ class NavBar extends Component {
                     <Nav.Item bg="dark">
                         <Nav.Link href="/trips">TRIPS</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link href="/hours">HOURS</Nav.Link>
-                    </Nav.Item>
                 </Navbar>
             </header>
         )

@@ -30,7 +30,35 @@
       "postTrip": true,
       "notes": "Checked the bus, everything is working properly, but it needs a windshield wiper",
       "startTime": "",
-      "endTime": ""
+      "endTime": "",
+      "weeklyTime": ""
+    },
+    {
+      "id": 2,
+      "busId": "2",
+      "preTrip": true,
+      "postTrip": true,
+      "notes": "door operation is a bit slow",
+      "startTime": 1571927892838,
+      "endTime": 1571927900104
+    },
+    {
+      "id": 3,
+      "busId": "2",
+      "preTrip": true,
+      "postTrip": true,
+      "notes": "found a crack in the window",
+      "startTime": 1571930983040,
+      "endTime": 1571930987695
+    },
+    {
+      "id": 4,
+      "busId": "2",
+      "preTrip": true,
+      "postTrip": true,
+      "notes": "ewfwfwefwfwefwfwf",
+      "startTime": 1571931012607,
+      "endTime": 1571931019478
     }
   ],
   "buses": [
