@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
-import ClockInCard from '../timecards/ClockInCard'
+import trackmlogoblack from '../trackmlogoblack.png'
+import './Home.css'
+
 
 class Home extends Component {
     render(){
-        return <ClockInCard />
+        return (
+            <img id="landing-photo" src={trackmlogoblack} alt=""></img>
+        )
 
 
     }

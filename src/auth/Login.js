@@ -23,7 +23,7 @@ class Login extends Component {
         .then(users => {
             if (this.state.password === users[0].password){
                 localStorage.setItem("userId", users[0].id)
-                this.props.history.push("/home");
+                this.props.history.push("/trips/clockin");
             } else {
                 alert("Invalid Password")
             }
