@@ -19,12 +19,6 @@
       "email": "greg@greg",
       "password": "greg",
       "id": 3
-    },
-    {
-      "username": "fred",
-      "email": "fred@happymeal.com",
-      "password": "fred",
-      "id": 4
     }
   ],
   "trips": [
@@ -36,17 +30,7 @@
       "postTrip": true,
       "notes": "Checked the bus, everything is working properly, but it needs a windshield wiper",
       "startTime": "",
-      "endTime": "",
-      "weeklyTime": ""
-    },
-    {
-      "id": 2,
-      "busId": "2",
-      "preTrip": true,
-      "postTrip": true,
-      "notes": "fiefnohsigjosijegoesigjeg",
-      "startTime": "Thu, Oct 24, 2019 3:30 PM",
-      "endTime": "Thu, Oct 24, 2019 3:30 PM"
+      "endTime": ""
     }
   ],
   "buses": [
