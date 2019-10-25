@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import ClockInManager from './ClockInManager';
+import moment from 'moment'
+import Card from 'react-bootstrap/Card'
+import Dropdown from 'react-bootstrap/Dropdown'
+import Form from 'react-bootstrap/Form'
 
 
 class ClockInCard extends Component {
@@ -45,7 +49,7 @@ class ClockInCard extends Component {
                 busId: this.state.busId,
                 preTrip: this.state.preTrip,
                 notes: this.state.notes,
-                startTime: Date.now()
+                startTime: moment().format('llll')
             };
             //setting state then pushing to /trips and put time in state
             ClockInManager.post(clockIn)
@@ -55,6 +59,42 @@ class ClockInCard extends Component {
 
     render() {
         return (
+            // <Card className="clock-in-card" bg="dark" text="white" style={{ width: '18rem' }}>
+            //     <Card.Body>
+            //         <Dropdown>
+            //             <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+            //                 Bus Number
+            //         </Dropdown.Toggle>
+            //             <Dropdown.Menu
+            //                 className="form-control"
+            //                 id="busId"
+            //                 value={this.state.busId}
+            //                 onChange={this.handleFieldChange}
+            //             ><Dropdown.Item>
+            //                     {this.state.buses.map(bus => (
+            //                         <option
+            //                             key={bus.id.busNumber}
+            //                             value={bus.id}
+            //                         >
+            //                             {bus.busNumber}
+            //                         </option>
+            //                     ))}
+            //                 </Dropdown.Item>
+            //             </Dropdown.Menu>
+            //         </Dropdown>
+            //         <Form>
+            //             <Form.Check
+            //                 label={`Pre-Trip Inspection`}
+            //                 onChange={this.handleFieldChange}
+            //             />
+            //         </Form>
+            //         <Form.Group controlId="exampleForm.ControlTextarea1">
+            //             <Form.Label>Notes:</Form.Label>
+            //             <Form.Control onChange={this.handleFieldChange} as="textarea" rows="3" />
+            //         </Form.Group>
+            //         <Card.Link onClick={this.newClockInCard} href="">{`Clock In`}</Card.Link>
+            //     </Card.Body>
+            // </Card>
             <div className="card">
                 <div className="card-content">
                     <select
@@ -87,7 +127,8 @@ class ClockInCard extends Component {
                     <button onClick={this.newClockInCard}>Clock In</button>
                 </div>
 
-            </div>)
+            </div>
+        )
 
     }
 }

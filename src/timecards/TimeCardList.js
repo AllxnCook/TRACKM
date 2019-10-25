@@ -6,6 +6,7 @@ import TimeCardManager from './TimeCardManager'
 class TimeCardList extends Component {
     // state
     state = {
+        id: 1,
         fullCard: []
     };
     // method for deleting a single trip from the trip list
@@ -13,7 +14,8 @@ class TimeCardList extends Component {
         TimeCardManager.delete(id).then(() => {
             TimeCardManager.getAll().then(parsedCards => {
                 this.setState({
-                    trips: parsedCards
+                    id: 1,
+                    fullCard: parsedCards
                 })
             })
         })
@@ -23,6 +25,7 @@ class TimeCardList extends Component {
         TimeCardManager.getAll()
             .then((fullCard) => {
                 this.setState({
+                    id: 1,
                     fullCard: fullCard
                 })
             })

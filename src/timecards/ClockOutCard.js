@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ClockOutManager from './ClockOutManager'
+import moment from 'moment'
 
 
 class ClockOutCard extends Component {
@@ -35,7 +36,7 @@ class ClockOutCard extends Component {
             postTrip: this.state.postTrip,
             notes: this.state.notes,
             startTime: this.state.startTime,
-            endTime: Date.now()
+            endTime: moment().format('llll')
         }
         ClockOutManager.update(clockOutPush)
         .then(() => this.props.history.push("/trips"))

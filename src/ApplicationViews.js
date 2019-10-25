@@ -5,7 +5,7 @@ import Login from "./auth/Login"
 import Register from './auth/Register'
 import ClockInCard from './timecards/ClockInCard'
 import ClockOutCard from './timecards/ClockOutCard'
-
+import Home from './home/Home'
 // component for controlling login behavior and redirecting incase of invald information
 
 class ApplicationViews extends Component {
@@ -16,6 +16,7 @@ class ApplicationViews extends Component {
     render() {
         return(
         <React.Fragment>
+            <Route exact path="/" render={props => {return <Home {...props}/>}}/>
             <Route exact path="/signin" render={props => {return <Login {...props}/>}} />
             <Route exact path="/register" render={props => {return <Register {...props}/>}}/>
             <Route exact path="/trips/clockin" render={props => {return <ClockInCard {...props} />}}/>
