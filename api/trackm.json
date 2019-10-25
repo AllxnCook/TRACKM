@@ -25,6 +25,12 @@
       "email": "fred@happymeal.com",
       "password": "fred",
       "id": 4
+    },
+    {
+      "username": "regina",
+      "email": "regina@regina.com",
+      "password": "regina",
+      "id": 5
     }
   ],
   "trips": [
